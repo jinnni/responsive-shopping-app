@@ -1,0 +1,298 @@
+button,input,body,html,ul,select,option{
+	outline: none;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	background: transparent;
+	font-size: 20px;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    position: fixed;
+}
+.bold {
+	font-weight: bold;
+}
+.hide{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+/*mobile std css*/
+.fixed-header{
+    height: 50px;
+    box-shadow: 0 1px 4px 0 #d4d5d9;
+}
+.mobile-header{
+    box-shadow: 0 1px 4px 0 #d4d5d9;
+    z-index: 9;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+}
+.mobile-header-text-type1{
+    padding: 10px;
+    font-size: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
+}
+.mobile-header-text-type2 {
+    padding: 10px;
+    font-size: 15px;
+    padding-top: 25%;
+}
+.mobile-center-header{
+	width: 100%
+}
+.mobile-left-header,.mobile-center-header,.mobile-right-header,.mobile-header{
+	display: flex;
+}
+.mobile-header .logo svg {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+.mobile-nav-bars,.mobile-sec-nav{
+	margin: 15px;
+}
+
+.mobile-nav-bars:before,.mobile-sec-nav:before{
+	font-size: 20px;
+}
+.mobile-mLogo {
+    -webkit-transform: scale(.7);
+    transform: scale(.7);
+}
+.mobile-img-menus{
+    height: 15%;
+    width: 100%;
+}
+.mobile-category-icon{
+    -webkit-box-flex: 1;
+    align-self: flex-start;
+    flex: 1 1 0%;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.mobile-row-base {
+    display: flexbox;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    display: -webkit-flex;
+    background: lavender;
+}
+.mobile-search-input {
+	position: absolute;
+    width: 100%;
+    height: 50px;
+    left: -143px;
+    background: white;
+}
+.mobile-left-menu-container {
+    display: none;
+    width: 0;
+    opacity: 0;
+}
+.mobile-left-menu-container.mobile-show{
+    overflow: scroll;
+    width: 75%;
+    -webkit-animation: mobile-slide ease-out .2s;
+    animation: mobile-slide ease-out .2s;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 99;
+    opacity: 1;
+    display: block;
+}
+.mobile-overlay,.mobile-popup {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background: rgba(0,0,0,.5);
+}
+.mobile-left-menu {
+    overflow-y: auto;
+}
+.mobile-profile {
+    height: 20%;
+    width: 100%;
+}
+.mobile-list,.mobile-product-list {
+    margin: 10px;
+}
+.mobile-list li,.mobile-product-list li>div, .mobile-sub-product li{
+    padding: 15px 0px;
+    border-bottom: 1px solid #eae8e8;
+    display: flex;
+}
+.mobile-list div,.mobile-product-list div {
+    width: 100%;
+}
+.mobile-list span,.mobile-product-list span {
+	color: #8a8a8a;
+    line-height: 27px;
+    margin: 0px 10px;
+}
+.mobile-list-heading {
+    padding: 10px 10px 10px 10px;
+    font-weight: 600;
+}
+.mobile-product-list,.mobile-sub-product {
+    padding-left: 38px;
+}
+.main-mobile-container{
+/*	position: relative;
+    height: 100%;*/
+}
+.mobile-floating-component {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+}
+.mobile-transform{
+	position: initial;
+}
+.mobile-floating-btns {
+    padding: 15px 17px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    background: rebeccapurple;
+    color: white;
+}
+.mobile-sort-modal {
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.50);
+	  background: rgba(255, 255, 255, 0.85);
+	  padding: 10px;
+}
+.mobile-sort-modal li {
+    padding: 5px 10px;
+    text-align: center;
+    border-bottom: 0.5px solid #c3c3c3;
+}
+.mobile-sort-modal li:last-child {
+	border-bottom: 0px;
+}
+.mobile-list-container {
+    position: absolute;
+}
+.mobile-filter-container {
+    background: white;
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: two;
+    grid-row-end: 2;
+}
+.mobile-filter-container-left-category {
+    width: 70%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+}
+.mobile-filter-container-left-control {
+    width: 100%;
+}
+.mobile-filter-modal {
+    grid-template-rows: 90% 10%;
+    display: grid;
+}
+.mobile-filter-control-container{
+    display: flex;
+    padding: 0px 15px;
+    background: white;
+    justify-content: space-between;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+}
+.mobile-filter-control,.mobile-cart-header div,.mobile-cart-footer{
+    font-size: 15px;
+    align-self: stretch;
+}
+.mobile-filter-control button
+{
+    font-size: inherit;
+}
+.mobile-filter-container li {
+    padding: 5px;
+    text-align: center;
+}
+.mobile-floating-divs{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 9;
+}
+.mobile-cart-container{
+	display: grid;
+    grid-template-rows: 10% auto 12%;
+}
+.mobile-cart-header{
+	display: grid;
+    grid-template-columns: 15% auto;
+}
+.mobile-cart-footer {
+    margin: 3px;
+    border-radius: 5px;
+    background: rebeccapurple;
+    display: grid;
+    color: white;
+}
+.list-unstyled.mobile-hide,.mobile-hide {
+    display: none;
+}
+.mobile-show {
+    display: block;
+    -webkit-animation: mobile-fadeIn .8s;
+    animation: mobile-fadeIn .8s;
+}
+.mobile-cart-product-list li {
+    display: grid;
+    grid-template-rows: auto 10%;
+    width: 100%;
+    padding: 2px;
+}
+.mobile-cart-product-row {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+.mobile-cart-product-col {
+    flex: 1;
+    padding: 2px;
+}
+.mobile-cart-product-row.edit div{
+
+}
